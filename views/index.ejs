@@ -15,5 +15,19 @@
       </li>
       <% }); %>
     </ul>
+
+<div class="pokemon-form">
+  <h2>Add pokemon</h2>
+  <form action="/add-pokemon" method="POST">
+    <label for="nome">nome</label>
+    <input type="text" name="nome" id="nome" required>
+
+    <label for="tipo">Tipo</label>
+    <input type="text" name="tipo" id="tipo" required>
+
+    <button type="submit">Adicionar pokemon</button>
+  </form>
+</div>
+
   </body>
 </html>

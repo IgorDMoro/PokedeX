@@ -14,4 +14,15 @@ const getPokemon = (req, res) => {
     }   
 };
 
-module.exports={ getAllPokemons, getPokemon };
+const addPokemon = (req, res) => {
+    const { nome, tipo } = req.body
+    pokemonModel.createPokemon(nome, tipo)
+    res.redirect('/')
+};
+
+const treinador = (req, res) => {
+    const {nome, idade} = req.body
+    
+}
+
+module.exports={ getAllPokemons, getPokemon, addPokemon};
