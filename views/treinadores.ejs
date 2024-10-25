@@ -13,5 +13,30 @@
         <% }) %>
     </ul>
     <a href="/add-treinador">Adicionar novo treinador</a>
+<p>
+<a href="/"> 
+    <button>Ver Pokédex</button>   
+ </a>
+</p>
+
+<h1>Cadastro de Treinador</h1>
+    <form action="/add-treinador" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" required>
+        
+        <label for="idade">Idade:</label>
+        <input type="number" name="idade" required>
+        
+        <label for="pokemons">Pokémons (nomes separados por vírgula):</label>
+        <input type="text" name="pokemons" placeholder="Ex: Bulbassauro, Squirtle" required>
+        
+        <button type="submit">Cadastrar Treinador</button>
+
+       
+    </form>
+        <a href="/"> 
+            <button>Ver Pokédex</button>   
+         </a>
+
 </body>
 </html>
