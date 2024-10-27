@@ -9,15 +9,17 @@
     <h1>Treinadores</h1>
     <ul>
         <% treinadores.forEach(treinador => { %>
-            <li><%= treinador.nome %> - Idade: <%= treinador.idade %></li>
+            <li>
+                <strong>Nome:</strong> <%= treinador.nome %> - <strong>Idade:</strong> <%= treinador.idade %>
+                <ul>
+                    <li><strong>Time de Pokémons:</strong></li>
+                    <% treinador.pokemons.forEach(pokemon => { %>
+                        <li><%= pokemon.nome %> - Tipo: <%= pokemon.tipo %></li>
+                    <% }) %>
+                </ul>
+            </li>
         <% }) %>
     </ul>
-    <a href="/add-treinador">Adicionar novo treinador</a>
-<p>
-<a href="/"> 
-    <button>Ver Pokédex</button>   
- </a>
-</p>
 
 <h1>Cadastro de Treinador</h1>
     <form action="/add-treinador" method="POST">

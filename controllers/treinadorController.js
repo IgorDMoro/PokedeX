@@ -2,7 +2,11 @@ const treinadorModel = require('../models/treinadorModel');
 const pokemonModel = require('../models/pokemonModel');
 
 const getAllTreinadores = (req, res) => {
-    const treinadores = treinadorModel.getTreinadores();
+    const treinadores = treinadorModel.getTreinadores().map(treinador => {
+        // Busca as informações completas dos pokémons associados ao treinador
+        const pokemons = treinador.pokemons.map(pokemonId => pokemonModel.getPokemonById(pokemonId));
+        return { ...treinador, pokemons };  // Retorna o treinador com os detalhes dos pokémons
+    });
     res.render('Treinadores', {treinadores });
 };
 
