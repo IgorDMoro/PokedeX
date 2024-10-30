@@ -1,5 +1,5 @@
 body{
-    background-image: url(wp3170170.webp);
+    background-image: url(backdaback.webp);
     background-repeat: no-repeat;
     background-size: 100%;
     margin-top: 90px;
@@ -7,5 +7,8 @@ body{
 }
 
 .teste{
-    color blue;
+    background-image: url(innerpoke.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
 }
