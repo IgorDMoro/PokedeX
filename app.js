@@ -3,6 +3,8 @@ const bodyParser = require('body-parser');
 const pokemonRoutes = require('./routes/pokemonRoutes');
 
 const app = express();
+app.use(express.static('public'));
+
 app.set('view engine', 'ejs');
 app.set('views', './views');
 app.use(bodyParser.urlencoded({ extended: true }) );
