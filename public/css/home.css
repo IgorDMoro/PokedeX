@@ -7,16 +7,18 @@ body{
     height: 1100px;
     width: 750px;
     margin: 0 auto;
+    position:static ;
 }
 
 .teste{
-    width: 57%;
-    background-color: blue;
+    width: 58%;
+    height: 38%;
+    background-color: rgb(69, 151, 14);
     text-align: center;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    margin: 0 auto;
-
+    margin-top: 142px;    
+    margin-left: 21%;
 }
