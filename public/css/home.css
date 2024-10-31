@@ -1,8 +1,22 @@
 body{
-    margin-top: 90px;
-    margin-left: 140px;
     background-image: url(/imgs/pokedex.png);
+    background-color: aqua;
     background-repeat: no-repeat;
-    background-position: center;
+    background-size: 28%;
+    background-position: 50% 1%;
+    height: 1100px;
+    width: 750px;
+    margin: 0 auto;
 }
 
+.teste{
+    width: 57%;
+    background-color: blue;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+
+}
