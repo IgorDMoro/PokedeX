@@ -22,3 +22,56 @@ body{
     margin-top: 142px;    
     margin-left: 21%;
 }
+
+.pokemon-list {
+    text-align: center;
+    max-width: 1200px;
+    background-color: #e3e3e3;
+    
+    position: absolute;
+    width: 410px; /* Ajuste para caber na tela da Pokédex */
+    height: 400px; /* Altura com rolagem */
+    overflow-y: scroll; /* Cria a rolagem */
+    top: 165px; /* Ajuste para posicionar na tela da Pokédex */
+    z-index: 2; /* Garante que o conteúdo apareça acima da imagem */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.pokemon-list::-webkit-scrollbar {
+    display: none;
+}
+
+.pokemon-list h1 {
+    font-family: 'Pokemon Solid';
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #ffb703;
+    text-shadow: 
+        -1px -1px 0 #023047,
+         1px -1px 0 #023047,
+        -1px  1px 0 #023047,
+         1px  1px 0 #023047;
+}
+
+.pokemon-list a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: #000; /* Cor do link padrão */
+    background-color: #f0f0f0; /* Cor de fundo do link */
+    padding: 10px 15px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease; /* Transição suave para hover */
+}
+
+.pokemon-list a:visited {
+    color: #000; /* Cor do link visitado (igual ao link normal) */
+}
+
+.pokemon-list a:hover {
+    background-color: #ccc; /* Cor de fundo no hover */
+    color: #fff; /* Cor do texto no hover */
+}
+
+.pokemon-list li:last-child {
+    border-bottom: none;
+}
