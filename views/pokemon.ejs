@@ -4,9 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= pokemon.nome %></title>
+    <link rel="stylesheet" href="/css/pokemon.css">
 </head>
 <body>
     
+    <!--header/cabecalho -->
+
+    <header>
+        <div class="cabecalho">
+            <a href="/">
+                <img src="/images/pokemon-logo.svg" alt="Logo Pokemon" class="logo">
+            </a>
+  
+            <nav>
+                <p><a href="/">Pokedex</a></p>
+                <p><a href="/treinadores">Treinadores</a></p>
+            </nav>
+        </div>
+      </header>
+
 <h1><%= pokemon.nome %></h1>
 <p>Tipo: <%= pokemon.tipo %></p>
 <p>peso: <%= pokemon.peso %></p>

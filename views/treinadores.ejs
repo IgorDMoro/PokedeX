@@ -2,11 +2,26 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/public/treinador.css">
+    <link rel="stylesheet" href="/css/treinadores.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Treinadores</title>
 </head>
 <body>
+
+<!--header/cabecalho -->
+
+<header>
+    <div class="cabecalho">
+        <a href="/">
+            <img src="/images/pokemon-logo.svg" alt="Logo Pokemon" class="logo">
+        </a>
+
+        <nav>
+            <p><a href="/">Pokedex</a></p>
+        </nav>
+    </div>
+  </header>
+
     <h1>Treinadores</h1>
     <ul>
         <% treinadores.forEach(treinador => { %>
