@@ -10,10 +10,10 @@ body{
     position:static ;
 }
 
-.teste{
+.inner{
     width: 58%;
     height: 38%;
-    background-color: rgb(69, 151, 14);
+    background-color: #e3e3e3;
     text-align: center;
     display: flex;
     align-items: center;
@@ -26,7 +26,6 @@ body{
 .pokemon-list {
     text-align: center;
     max-width: 1200px;
-    background-color: #e3e3e3;
     
     position: absolute;
     width: 410px; /* Ajuste para caber na tela da Pokédex */
@@ -61,6 +60,8 @@ body{
     padding: 10px 15px; /* Espaçamento interno */
     border-radius: 8px; /* Bordas arredondadas */
     transition: background-color 0.3s ease; /* Transição suave para hover */
+    margin-left: 5px;
+    margin-right: 5px; 
 }
 
 .pokemon-list a:visited {
