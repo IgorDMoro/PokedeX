@@ -3,11 +3,11 @@ body{
     background-color: aqua;
     background-repeat: no-repeat;
     background-size: 28%;
-    background-position: 50% 1%;
+    background-position: 50%;
     height: 1100px;
     width: 750px;
     margin: 0 auto;
-    position:static ;
+    position:static;
 }
 
 .inner{
@@ -19,7 +19,7 @@ body{
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    margin-top: 142px;    
+    margin-top: 221px;    
     margin-left: 21%;
 }
 
@@ -27,7 +27,7 @@ body{
     text-align: center;
     max-width: 1200px;
     
-    position: absolute;
+    position: static;
     width: 410px; /* Ajuste para caber na tela da Pokédex */
     height: 400px; /* Altura com rolagem */
     overflow-y: scroll; /* Cria a rolagem */
